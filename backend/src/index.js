@@ -40,9 +40,9 @@ const options = {
     openapi: '3.0.0',
     info: {
       version: '1.0.0',
-      title: 'crm',
+      title: 'CRM-POC',
       description:
-        'crm Online REST API for Testing and Prototyping application. You can perform all major operations with your entities - create, delete and etc.',
+        'CRM Online REST API for Testing and Prototyping application. You can perform all major operations with your entities - create, delete and etc.',
     },
     servers: [
       {
