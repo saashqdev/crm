@@ -1,4 +1,4 @@
-# crm
+# CRM POC
 
 ## This project was built by the SaasHQ Platform.
 
