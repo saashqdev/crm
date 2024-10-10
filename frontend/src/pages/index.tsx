@@ -26,7 +26,7 @@ export default function Starter() {
   const [contentPosition, setContentPosition] = useState('right');
   const textColor = useAppSelector((state) => state.style.linkColor);
 
-  const title = 'crm';
+  const title = 'CRM-POC';
 
   // Fetch Pexels image/video
   useEffect(() => {

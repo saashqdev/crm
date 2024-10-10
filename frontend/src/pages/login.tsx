@@ -51,7 +51,7 @@ export default function Login() {
     remember: true,
   });
 
-  const title = 'crm';
+  const title = 'CRM-POC';
 
   // Fetch Pexels image/video
   useEffect(() => {
