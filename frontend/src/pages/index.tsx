@@ -22,7 +22,7 @@ export default function Starter() {
   const [illustrationVideo, setIllustrationVideo] = useState({
     video_files: [],
   });
-  const [contentType, setContentType] = useState('video');
+  const [contentType, setContentType] = useState('image');
   const [contentPosition, setContentPosition] = useState('right');
   const textColor = useAppSelector((state) => state.style.linkColor);
 

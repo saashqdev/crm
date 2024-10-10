@@ -18,4 +18,4 @@ export const tinyKey = 'cnslp6h943xbg36t2tf2xglmrxiw5b7tatycf3kir7n2j7eh';
 
 export const pexelsKey =
   'Vc99rnmOhHhJAbgGQoKLZtsaIVfkeownoQNbTj78VemUjKh08ZYRbf18';
-export const pexelsQuery = 'connecting departments in harmony';
+export const pexelsQuery = 'business development';

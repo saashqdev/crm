@@ -27,7 +27,7 @@ export async function getPexelsVideo() {
     Authorization: `${KEY}`,
   });
   const baseUrl = 'https://api.pexels.com/videos/search';
-  const query = pexelsQuery || 'nature';
+  const query = pexelsQuery || 'software';
   const orientation = 'portrait'; // landscape, portrait or square
   const perPage = 1;
   const url =
