@@ -48,7 +48,7 @@ module.exports = {
         {
           id: ids[3],
           firstName: 'Super Admin',
-          email: 'super_admin@saashqdev.com',
+          email: 'super_admin@saashqdev.org',
           emailVerified: true,
           provider: config.providers.LOCAL,
           password: hash,

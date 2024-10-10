@@ -992,12 +992,12 @@ primary key ("roles_permissionsId", "permissionId")
     await queryInterface.sequelize.query(
       `UPDATE "users" SET "app_roleId"='${getId(
         'SuperAdmin',
-      )}' WHERE "email"='super_admin@saashqdev.com'`,
+      )}' WHERE "email"='super_admin@saashqdev.org'`,
     );
     await queryInterface.sequelize.query(
       `UPDATE "users" SET "app_roleId"='${getId(
         'Administrator',
-      )}' WHERE "email"='admin@saashqdev.com'`,
+      )}' WHERE "email"='admin@saashqdev.org'`,
     );
 
     await queryInterface.sequelize.query(

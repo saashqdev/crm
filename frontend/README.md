@@ -42,7 +42,7 @@ npm run format
 
 ## Support
 
-For any additional information please refer to [saashqdev homepage](https://saashqdev.com).
+For any additional information please refer to [saashqdev homepage](https://saashqdev.org).
 
 ## To start the project with Docker:
 

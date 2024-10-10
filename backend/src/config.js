@@ -9,7 +9,7 @@ const config = {
     saltRounds: 12,
   },
   admin_pass: 'password',
-  admin_email: 'admin@saashqdev.com',
+  admin_email: 'admin@saashqdev.org',
   providers: {
     LOCAL: 'local',
     GOOGLE: 'google',
@@ -57,7 +57,7 @@ const config = {
   project_uuid: '5859e865-4af5-4197-bab8-e6133f47b8fa',
   flHost:
     process.env.NODE_ENV === 'production'
-      ? 'https://saashqdev.com/projects'
+      ? 'https://saashqdev.org/projects'
       : 'http://localhost:3000/projects',
 };
 

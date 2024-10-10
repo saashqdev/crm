@@ -7,7 +7,7 @@ type Props = {
 export default function Logo({ className = '' }: Props) {
   return (
     <img
-      src={'https://saashqdev.com/logo.svg'}
+      src={'https://saashqdev.org/logo.svg'}
       className={className}
       alt={'saashqdev logo'}
     ></img>

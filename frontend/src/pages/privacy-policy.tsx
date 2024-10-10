@@ -250,11 +250,11 @@ export default function PrivacyPolicy() {
         </p>
         <div>
           By email:{' '}
-          <a href='mailto:support@saashqdev.com'> [support@saashqdev.com]</a>
+          <a href='mailto:support@saashqdev.org'> [support@saashqdev.org]</a>
         </div>
         <div>
           By visiting this page on our website:{' '}
-          <a href='https://saashqdev.com/contact'>Contact Us</a>
+          <a href='https://saashqdev.org/contact'>Contact Us</a>
         </div>
       </>
     );

@@ -21,7 +21,7 @@ const router = express.Router();
  *        properties:
  *          email:
  *            type: string
- *            default: admin@saashqdev.com
+ *            default: admin@saashqdev.org
  *            description: User email
  *          password:
  *            type: string

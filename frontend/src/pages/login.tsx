@@ -46,7 +46,7 @@ export default function Login() {
     notify: notifyState,
   } = useAppSelector((state) => state.auth);
   const [initialValues, setInitialValues] = React.useState({
-    email: 'super_admin@saashqdev.com',
+    email: 'super_admin@saashqdev.org',
     password: 'password',
     remember: true,
   });
@@ -200,7 +200,7 @@ export default function Login() {
                       className={`cursor-pointer ${textColor} `}
                       onClick={(e) => setLogin(e.target)}
                     >
-                      super_admin@saashqdev.com
+                      super_admin@saashqdev.org
                     </code>{' '}
                     to login as Super Admin
                   </p>
@@ -211,7 +211,7 @@ export default function Login() {
                       className={`cursor-pointer ${textColor} `}
                       onClick={(e) => setLogin(e.target)}
                     >
-                      admin@saashqdev.com
+                      admin@saashqdev.org
                     </code>{' '}
                     to login as Admin
                   </p>
