@@ -35,7 +35,7 @@ export default function Login() {
   const [illustrationVideo, setIllustrationVideo] = useState({
     video_files: [],
   });
-  const [contentType, setContentType] = useState('video');
+  const [contentType, setContentType] = useState('image');
   const [contentPosition, setContentPosition] = useState('right');
 
   const {
