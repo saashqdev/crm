@@ -4,9 +4,9 @@
 
 ## This project is the starter project for our CRM POC.
 
-  - Frontend: [React.js]https://github.com/saashqdev/crm/tree/master/frontend
+  - Frontend: [React.js] https://github.com/saashqdev/crm/tree/master/frontend
 
-  - Backend: [NodeJS]https://github.com/saashqdev/crm/tree/master/backend
+  - Backend: [NodeJS] https://github.com/saashqdev/crm/tree/master/backend
 
     <details><summary>Backend Folder Structure</summary>   
 
