@@ -16,7 +16,7 @@ export default function FooterBar({ children }: Props) {
           <b>
             &copy;{year},{` `}
             <a href='https://saashqdev.org/' rel='noreferrer' target='_blank'>
-              saashqdev
+              SaasHQ
             </a>
             .
           </b>

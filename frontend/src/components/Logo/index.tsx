@@ -9,7 +9,7 @@ export default function Logo({ className = '' }: Props) {
     <img
       src={'https://saashqdev.org/logo.svg'}
       className={className}
-      alt={'saashqdev logo'}
+      alt={'SaasHQ Logo'}
     ></img>
   );
 }

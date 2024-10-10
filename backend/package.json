@@ -1,6 +1,6 @@
 {
-  "name": "crm",
-  "description": "crm - template backend",
+  "name": "crm-poc",
+  "description": "CRM-POC - backend",
   "scripts": {
     "start": "npm run db:migrate && npm run db:seed && nodemon ./src/index.js",
     "db:migrate": "sequelize-cli db:migrate",
