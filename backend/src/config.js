@@ -27,8 +27,8 @@ const config = {
   swaggerPort: process.env.NODE_ENV === 'production' ? '' : ':8080',
   google: {
     clientId:
-      '171146354208-5fai6f5m6d72vkt32jk155aenedlbd6d.apps.googleusercontent.com',
-    clientSecret: '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',
+      '171146354208-uspl64fj185mivnr94temphk5ba6guoj.apps.googleusercontent.com',
+    clientSecret: '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',
   },
   microsoft: {
     clientId: '4696f457-31af-40de-897c-e00d7d4cff73',
