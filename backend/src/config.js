@@ -27,8 +27,8 @@ const config = {
   swaggerPort: process.env.NODE_ENV === 'production' ? '' : ':8080',
   google: {
     clientId:
-      '171146354208-32fdcetgcqug3rva8tv0e3ttul7nk0mt.apps.googleusercontent.com',
-    clientSecret: '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',
+      '171146354208-5fai6f5m6d72vkt32jk155aenedlbd6d.apps.googleusercontent.com',
+    clientSecret: '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',
   },
   microsoft: {
     clientId: '4696f457-31af-40de-897c-e00d7d4cff73',
@@ -36,11 +36,11 @@ const config = {
   },
   uploadDir: os.tmpdir(),
   email: {
-    from: 'crm <app@saashqdev.app>',
-    host: 'email-smtp.us-east-1.amazonaws.com',
+    from: 'CRM-POC <support@saashqdev.org>',
+    host: 'smtp.gmail.com',
     port: 587,
     auth: {
-      user: 'AKIAVEW7G4PQUBGM52OF',
+      user: 'saashqdev@gmail.com',
       pass: process.env.EMAIL_PASS,
     },
     tls: {
