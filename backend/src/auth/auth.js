@@ -10,6 +10,10 @@ const GoogleStrategy = require('passport-google-oauth2').Strategy;
 const MicrosoftStrategy = require('passport-microsoft').Strategy;
 const UsersDBApi = require('../db/api/users');
 
+const RolesDBApi = require('../db/api/roles');
+const OrganizationsDBApi = require('../db/api/organizations');
+const OrganizationsService = require('../services/organizations');
+
 passport.use(
   new JWTstrategy(
     {
@@ -64,10 +68,37 @@ passport.use(
   ),
 );
 
-function socialStrategy(email, profile, provider, done) {
+async function socialStrategy(email, profile, provider, done) {
+  const role = await RolesDBApi.findBy({ name: config.roles.user });
+  const organizationName = email.split('@')[0];
+
+  let organization = await OrganizationsDBApi.findBy({ name: organizationName });
+
+  if (!organization) {
+    organization = await OrganizationsService.create({
+      name: organizationName,
+    });
+  }
   db.users
-    .findOrCreate({ where: { email, provider } })
-    .then(([user, created]) => {
+    .findOrCreate({
+      where: {
+        email,
+        app_roleId: role.id,
+      },
+    })
+    .then(async ([user, created]) => {
+        let shouldUpdate = false;
+        if (!user.organizationId) {
+          user.organizationId = organization.id;
+          shouldUpdate = true;
+        }
+        if (!user.firstName ) {
+          user.firstName = email.split('@')[0];
+          shouldUpdate = true;
+        }
+        if (shouldUpdate) {
+          await user.save();  
+        }
       const body = {
         id: user.id,
         email: user.email,
@@ -77,3 +108,4 @@ function socialStrategy(email, profile, provider, done) {
       return done(null, { token });
     });
 }
+

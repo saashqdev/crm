@@ -13,7 +13,7 @@ type Props = {
 const BaseButtons = ({
   type = 'justify-end',
   mb = '-mb-3',
-  classAddon = 'mr-3 last:mr-0 mb-3',
+  classAddon = 'mr-3 last:mr-3 mb-3',
   noWrap = false,
   children,
   className,

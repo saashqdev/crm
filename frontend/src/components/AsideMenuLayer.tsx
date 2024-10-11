@@ -72,7 +72,7 @@ export default function AsideMenuLayer({
           className={`flex flex-row h-14 items-center justify-between ${asideBrandStyle}`}
         >
           <div className='text-center flex-1 lg:text-left lg:pl-6 xl:text-center xl:pl-0'>
-            <b className='font-black'>crm</b>
+            <b className='font-black'>CRM-POC</b>
 
             {organizationName && <p>{organizationName}</p>}
           </div>

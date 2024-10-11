@@ -13,13 +13,14 @@ import FormCheckRadio from '../components/FormCheckRadio';
 import BaseDivider from '../components/BaseDivider';
 import BaseButtons from '../components/BaseButtons';
 import { useRouter } from 'next/router';
-import { getPageTitle } from '../config';
+import { baseURLApi, getPageTitle } from '../config';
 import { findMe, loginUser, resetAction } from '../stores/authSlice';
 import { useAppDispatch, useAppSelector } from '../stores/hooks';
 import Link from 'next/link';
 import { toast, ToastContainer } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.min.css';
 import { getPexelsImage, getPexelsVideo } from '../helpers/pexels';
+import { googleTokenParse } from '../stores/authSlice';
 
 export default function Login() {
   const router = useRouter();
@@ -87,7 +88,22 @@ export default function Login() {
       notify('success', notifyState?.textNotification);
       dispatch(resetAction());
     }
-  }, [notifyState?.showNotification]);
+  }, [dispatch, notifyState?.showNotification, notifyState?.textNotification]);
+  // Handle Google auth token
+  useEffect(() => {
+    if (typeof window !== 'undefined') {
+      const localToken = localStorage.getItem('token');
+      const params = new URLSearchParams(location.search);
+      const googleAuthToken = params.get('token');
+      if (googleAuthToken) {
+        dispatch(googleTokenParse(googleAuthToken));
+      }
+      if (localToken && (!currentUser || !currentUser.id) ) {
+        dispatch(findMe());
+      }
+    }
+  }, [token, dispatch, currentUser]);
+
 
   const handleSubmit = async (value) => {
     const { remember, ...rest } = value;
@@ -99,6 +115,10 @@ export default function Login() {
     setInitialValues((prev) => {
       return { ...prev, email, password: 'password' };
     });
+  };
+
+  const handleGoogleLogin = async () => {
+    window.location.href = `${baseURLApi}/auth/signin/google`;
   };
 
   const imageBlock = (image) => (
@@ -268,11 +288,20 @@ export default function Login() {
 
                   <BaseDivider />
 
-                  <BaseButtons>
+                  <BaseButtons className={'ml-2'}>
                     <BaseButton
                       className={'w-full'}
                       type='submit'
                       label={isFetching ? 'Loading...' : 'Login'}
+                      color='info'
+                      disabled={isFetching}
+                    />
+                  </BaseButtons>  
+                  <BaseButtons className={'ml-2'}>  
+                    <BaseButton
+                      className={'w-full mt-2'}
+                      onClick={handleGoogleLogin}
+                      label={isFetching ? 'Loading...' : 'Login with Google'}
                       color='info'
                       disabled={isFetching}
                     />

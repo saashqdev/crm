@@ -70,6 +70,15 @@ export const authSlice = createSlice({
       state.currentUser = null;
       state.token = '';
     },
+    googleTokenParse: (state, action) => {
+      const token = action.payload;
+      const user = jwt.decode(token);
+      state.errorMessage = '';
+      state.token = token;
+      localStorage.setItem('token', token);
+      localStorage.setItem('user', JSON.stringify(user));
+      axios.defaults.headers.common['Authorization'] = 'Bearer ' + token;
+    },
   },
   extraReducers: (builder) => {
     builder.addCase(loginUser.pending, (state) => {
@@ -112,6 +121,6 @@ export const authSlice = createSlice({
 });
 
 // Action creators are generated for each case reducer function
-export const { logoutUser } = authSlice.actions;
-
 export default authSlice.reducer;
+
+export const { logoutUser, googleTokenParse } = authSlice.actions;
