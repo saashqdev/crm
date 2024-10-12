@@ -44,12 +44,12 @@ const LeadsView = () => {
   return (
     <>
       <Head>
-        <title>{getPageTitle('View leads')}</title>
+        <title>{getPageTitle('View Leads')}</title>
       </Head>
       <SectionMain>
         <SectionTitleLineWithButton
           icon={mdiChartTimelineVariant}
-          title={removeLastCharacter('View leads')}
+          title={removeLastCharacter('View Leads')}
           main
         >
           {''}
@@ -127,7 +127,7 @@ const LeadsView = () => {
 
           {hasPermission(currentUser, 'READ_ORGANIZATIONS') && (
             <div className={'mb-4'}>
-              <p className={'block font-bold mb-2'}>organization</p>
+              <p className={'block font-bold mb-2'}>Organization</p>
 
               <p>{leads?.organization?.name ?? 'No data'}</p>
             </div>

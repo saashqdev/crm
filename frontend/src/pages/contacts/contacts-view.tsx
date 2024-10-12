@@ -77,7 +77,7 @@ const ContactsView = () => {
 
           {hasPermission(currentUser, 'READ_ORGANIZATIONS') && (
             <div className={'mb-4'}>
-              <p className={'block font-bold mb-2'}>organization</p>
+              <p className={'block font-bold mb-2'}>Organization</p>
 
               <p>{contacts?.organization?.name ?? 'No data'}</p>
             </div>
