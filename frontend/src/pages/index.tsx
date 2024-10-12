@@ -136,7 +136,7 @@ export default function Starter() {
                   This is a React.js/Node.js app built by {' '}
                   <a
                     className={`${textColor}`}
-                    href='https://saashqdev.org'
+                    href='https://discord.gg/kBhAUKBMgf'
                   >
                     SaasHQ
                   </a>
