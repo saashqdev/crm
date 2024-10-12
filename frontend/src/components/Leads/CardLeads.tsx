@@ -83,7 +83,7 @@ const CardUsers = ({
               <dl className='divide-y  divide-stone-300   dark:divide-dark-700 px-6 py-4 text-sm leading-6 h-64 overflow-y-auto'>
                 <div className='flex justify-between gap-x-4 py-3'>
                   <dt className='  text-gray-500  dark:text-dark-600'>
-                    LeadName
+                    Lead Name
                   </dt>
                   <dd className='flex items-start gap-x-2'>
                     <div className='font-medium line-clamp-4'>{item.name}</div>

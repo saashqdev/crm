@@ -106,8 +106,8 @@ const EditLeads = () => {
             onSubmit={(values) => handleSubmit(values)}
           >
             <Form>
-              <FormField label='LeadName'>
-                <Field name='name' placeholder='LeadName' />
+              <FormField label='Lead Name'>
+                <Field name='name' placeholder='Lead Name' />
               </FormField>
 
               <FormField label='Status' labelFor='status'>

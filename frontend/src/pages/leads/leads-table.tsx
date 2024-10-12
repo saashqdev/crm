@@ -29,7 +29,7 @@ const LeadsTablesPage = () => {
   const dispatch = useAppDispatch();
 
   const [filters] = useState([
-    { label: 'LeadName', title: 'name' },
+    { label: 'Lead Name', title: 'name' },
     { label: 'Category', title: 'category' },
 
     { label: 'Owner', title: 'owner' },

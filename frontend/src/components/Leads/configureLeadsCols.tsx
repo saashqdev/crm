@@ -42,7 +42,7 @@ export const loadColumns = async (
   return [
     {
       field: 'name',
-      headerName: 'LeadName',
+      headerName: 'Lead Name',
       flex: 1,
       minWidth: 120,
       filterable: false,

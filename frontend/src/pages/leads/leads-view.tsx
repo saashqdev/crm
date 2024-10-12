@@ -56,7 +56,7 @@ const LeadsView = () => {
         </SectionTitleLineWithButton>
         <CardBox>
           <div className={'mb-4'}>
-            <p className={'block font-bold mb-2'}>LeadName</p>
+            <p className={'block font-bold mb-2'}>Lead Name</p>
             <p>{leads?.name}</p>
           </div>
 

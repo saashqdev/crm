@@ -198,7 +198,7 @@ const UsersView = () => {
                 <table>
                   <thead>
                     <tr>
-                      <th>LeadName</th>
+                      <th>Lead Name</th>
 
                       <th>Status</th>
 

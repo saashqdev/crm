@@ -59,7 +59,7 @@ const ListLeads = ({
                   onClick={() => onView(item.id)}
                 >
                   <div className={'flex-1 px-3'}>
-                    <p className={'text-xs   text-gray-500 '}>LeadName</p>
+                    <p className={'text-xs   text-gray-500 '}>Lead Name</p>
                     <p className={'line-clamp-2'}>{item.name}</p>
                   </div>
 
