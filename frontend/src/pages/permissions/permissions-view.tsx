@@ -44,12 +44,12 @@ const PermissionsView = () => {
   return (
     <>
       <Head>
-        <title>{getPageTitle('View permissions')}</title>
+        <title>{getPageTitle('View Permissions')}</title>
       </Head>
       <SectionMain>
         <SectionTitleLineWithButton
           icon={mdiChartTimelineVariant}
-          title={removeLastCharacter('View permissions')}
+          title={removeLastCharacter('View Permissions')}
           main
         >
           {''}

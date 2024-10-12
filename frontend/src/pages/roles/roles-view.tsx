@@ -44,12 +44,12 @@ const RolesView = () => {
   return (
     <>
       <Head>
-        <title>{getPageTitle('View roles')}</title>
+        <title>{getPageTitle('View Roles')}</title>
       </Head>
       <SectionMain>
         <SectionTitleLineWithButton
           icon={mdiChartTimelineVariant}
-          title={removeLastCharacter('View roles')}
+          title={removeLastCharacter('View Roles')}
           main
         >
           {''}
