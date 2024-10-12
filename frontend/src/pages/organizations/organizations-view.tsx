@@ -44,12 +44,12 @@ const OrganizationsView = () => {
   return (
     <>
       <Head>
-        <title>{getPageTitle('View organizations')}</title>
+        <title>{getPageTitle('View Organizations')}</title>
       </Head>
       <SectionMain>
         <SectionTitleLineWithButton
           icon={mdiChartTimelineVariant}
-          title={removeLastCharacter('View organizations')}
+          title={removeLastCharacter('View Organizations')}
           main
         >
           {''}
@@ -262,7 +262,7 @@ const OrganizationsView = () => {
                 <table>
                   <thead>
                     <tr>
-                      <th>OpportunityTitle</th>
+                      <th>Opportunity Title</th>
 
                       <th>Value</th>
 

@@ -1,6 +1,6 @@
 # CRM POC
 
-## This project was built by the SaasHQ Platform.
+## This project was built by SaasHQ.
 
 ## Install
 

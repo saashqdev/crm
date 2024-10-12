@@ -89,12 +89,12 @@ const EditLeads = () => {
   return (
     <>
       <Head>
-        <title>{getPageTitle('Edit leads')}</title>
+        <title>{getPageTitle('Edit Leads')}</title>
       </Head>
       <SectionMain>
         <SectionTitleLineWithButton
           icon={mdiChartTimelineVariant}
-          title={'Edit leads'}
+          title={'Edit Leads'}
           main
         >
           {''}
@@ -149,7 +149,7 @@ const EditLeads = () => {
               </FormField>
 
               {hasPermission(currentUser, 'READ_ORGANIZATIONS') && (
-                <FormField label='organization' labelFor='organization'>
+                <FormField label='Organization' labelFor='organization'>
                   <Field
                     name='organization'
                     id='organization'

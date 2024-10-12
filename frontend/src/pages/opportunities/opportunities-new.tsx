@@ -72,8 +72,8 @@ const OpportunitiesNew = () => {
             onSubmit={(values) => handleSubmit(values)}
           >
             <Form>
-              <FormField label='OpportunityTitle'>
-                <Field name='title' placeholder='OpportunityTitle' />
+              <FormField label='Opportunity Title'>
+                <Field name='title' placeholder='Opportunity Title' />
               </FormField>
 
               <FormField label='Value'>
@@ -98,7 +98,7 @@ const OpportunitiesNew = () => {
                 ></Field>
               </FormField>
 
-              <FormField label='organization' labelFor='organization'>
+              <FormField label='Organization' labelFor='organization'>
                 <Field
                   name='organization'
                   id='organization'

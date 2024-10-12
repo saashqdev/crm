@@ -44,19 +44,19 @@ const OpportunitiesView = () => {
   return (
     <>
       <Head>
-        <title>{getPageTitle('View opportunities')}</title>
+        <title>{getPageTitle('View Opportunities')}</title>
       </Head>
       <SectionMain>
         <SectionTitleLineWithButton
           icon={mdiChartTimelineVariant}
-          title={removeLastCharacter('View opportunities')}
+          title={removeLastCharacter('View Opportunities')}
           main
         >
           {''}
         </SectionTitleLineWithButton>
         <CardBox>
           <div className={'mb-4'}>
-            <p className={'block font-bold mb-2'}>OpportunityTitle</p>
+            <p className={'block font-bold mb-2'}>Opportunity Title</p>
             <p>{opportunities?.title}</p>
           </div>
 
@@ -94,7 +94,7 @@ const OpportunitiesView = () => {
 
           {hasPermission(currentUser, 'READ_ORGANIZATIONS') && (
             <div className={'mb-4'}>
-              <p className={'block font-bold mb-2'}>organization</p>
+              <p className={'block font-bold mb-2'}>Organization</p>
 
               <p>{opportunities?.organization?.name ?? 'No data'}</p>
             </div>

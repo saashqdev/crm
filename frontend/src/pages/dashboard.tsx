@@ -274,7 +274,7 @@ const Dashboard = () => {
               >
                 <div className='flex justify-between align-center'>
                   <div>
-                    <div className='text-lg leading-tight   text-gray-500 dark:text-gray-400'>
+                    <div className='text-lg leading-tight text-gray-500 dark:text-gray-400'>
                       Leads
                     </div>
                     <div className='text-3xl leading-tight font-semibold'>

@@ -79,12 +79,12 @@ const EditOrganizationsPage = () => {
   return (
     <>
       <Head>
-        <title>{getPageTitle('Edit organizations')}</title>
+        <title>{getPageTitle('Edit Organizations')}</title>
       </Head>
       <SectionMain>
         <SectionTitleLineWithButton
           icon={mdiChartTimelineVariant}
-          title={'Edit organizations'}
+          title={'Edit Organizations'}
           main
         >
           {''}

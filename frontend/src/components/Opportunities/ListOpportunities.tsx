@@ -63,7 +63,7 @@ const ListOpportunities = ({
                 >
                   <div className={'flex-1 px-3'}>
                     <p className={'text-xs   text-gray-500 '}>
-                      OpportunityTitle
+                      Opportunity Title
                     </p>
                     <p className={'line-clamp-2'}>{item.title}</p>
                   </div>

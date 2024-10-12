@@ -143,7 +143,7 @@ const LeadsView = () => {
                 <table>
                   <thead>
                     <tr>
-                      <th>OpportunityTitle</th>
+                      <th>Opportunity Title</th>
 
                       <th>Value</th>
 

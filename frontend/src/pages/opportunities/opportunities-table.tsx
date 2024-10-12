@@ -32,7 +32,7 @@ const OpportunitiesTablesPage = () => {
   const dispatch = useAppDispatch();
 
   const [filters] = useState([
-    { label: 'OpportunityTitle', title: 'title' },
+    { label: 'Opportunity Title', title: 'title' },
 
     { label: 'Value', title: 'value', number: 'true' },
     { label: 'CloseDate', title: 'close_date', date: 'true' },

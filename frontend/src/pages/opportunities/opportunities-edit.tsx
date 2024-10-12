@@ -87,7 +87,7 @@ const EditOpportunitiesPage = () => {
   return (
     <>
       <Head>
-        <title>{getPageTitle('Edit opportunities')}</title>
+        <title>{getPageTitle('Edit Opportunities')}</title>
       </Head>
       <SectionMain>
         <SectionTitleLineWithButton
@@ -104,8 +104,8 @@ const EditOpportunitiesPage = () => {
             onSubmit={(values) => handleSubmit(values)}
           >
             <Form>
-              <FormField label='OpportunityTitle'>
-                <Field name='title' placeholder='OpportunityTitle' />
+              <FormField label='Opportunity Title'>
+                <Field name='title' placeholder='Opportunity Title' />
               </FormField>
 
               <FormField label='Value'>
@@ -143,7 +143,7 @@ const EditOpportunitiesPage = () => {
               </FormField>
 
               {hasPermission(currentUser, 'READ_ORGANIZATIONS') && (
-                <FormField label='organization' labelFor='organization'>
+                <FormField label='Organization' labelFor='organization'>
                   <Field
                     name='organization'
                     id='organization'

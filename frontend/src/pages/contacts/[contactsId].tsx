@@ -121,7 +121,7 @@ const EditContacts = () => {
               </FormField>
 
               {hasPermission(currentUser, 'READ_ORGANIZATIONS') && (
-                <FormField label='organization' labelFor='organization'>
+                <FormField label='Organization' labelFor='organization'>
                   <Field
                     name='organization'
                     id='organization'
