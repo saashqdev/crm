@@ -129,7 +129,7 @@ export default function Starter() {
             : null}
           <div className='flex items-center justify-center flex-col space-y-4 w-full lg:w-full'>
             <CardBox className='w-full md:w-3/5 lg:w-2/3'>
-              <CardBoxComponentTitle title='Welcome to your crm app!' />
+              <CardBoxComponentTitle title='Welcome to our CRM-POC app!' />
               <BaseDivider />
               <div className='space-y-3'>
                 <p className='text-center text-gray-500'>
@@ -142,13 +142,12 @@ export default function Starter() {
                   </a>
                 </p>
                 <p className='text-center text-gray-500'>
-                  For guides and documentation please check our local README.md
-                  and the{' '}
+                  For guides and documentation please check our local{' '}
                   <a
                     className={`${textColor}`}
-                    href='https://saashqdev.org/documentation'
+                    href='https://github.com/saashqdev/crm'
                   >
-                    SaasHQ documentation
+                    README.md
                   </a>
                 </p>
               </div>
