@@ -34,7 +34,7 @@ const Customer_interactionsTablesPage = () => {
   const [filters] = useState([
     { label: 'Notes', title: 'notes' },
 
-    { label: 'InteractionDate', title: 'interaction_date', date: 'true' },
+    { label: 'Interaction Date', title: 'interaction_date', date: 'true' },
     { label: 'Contact', title: 'contact' },
     { label: 'User', title: 'user' },
   ]);

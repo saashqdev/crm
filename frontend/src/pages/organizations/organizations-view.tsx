@@ -174,7 +174,7 @@ const OrganizationsView = () => {
                 <table>
                   <thead>
                     <tr>
-                      <th>InteractionDate</th>
+                      <th>Interaction Date</th>
                     </tr>
                   </thead>
                   <tbody>

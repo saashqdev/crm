@@ -57,7 +57,7 @@ const Customer_interactionsView = () => {
           {''}
         </SectionTitleLineWithButton>
         <CardBox>
-          <FormField label='InteractionDate'>
+          <FormField label='Interaction Date'>
             {customer_interactions.interaction_date ? (
               <DatePicker
                 dateFormat='yyyy-MM-dd hh:mm'
@@ -74,7 +74,7 @@ const Customer_interactionsView = () => {
                 disabled
               />
             ) : (
-              <p>No InteractionDate</p>
+              <p>No Interaction Date</p>
             )}
           </FormField>
 

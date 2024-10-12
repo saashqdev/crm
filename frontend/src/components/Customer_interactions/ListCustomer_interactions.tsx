@@ -63,7 +63,7 @@ const ListCustomer_interactions = ({
                 >
                   <div className={'flex-1 px-3'}>
                     <p className={'text-xs   text-gray-500 '}>
-                      InteractionDate
+                      Interaction Date
                     </p>
                     <p className={'line-clamp-2'}>
                       {dataFormatter.dateTimeFormatter(item.interaction_date)}

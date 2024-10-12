@@ -45,7 +45,7 @@ export const loadColumns = async (
   return [
     {
       field: 'interaction_date',
-      headerName: 'InteractionDate',
+      headerName: 'Interaction Date',
       flex: 1,
       minWidth: 120,
       filterable: false,

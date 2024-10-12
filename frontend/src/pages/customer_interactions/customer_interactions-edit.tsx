@@ -109,7 +109,7 @@ const EditCustomer_interactionsPage = () => {
             onSubmit={(values) => handleSubmit(values)}
           >
             <Form>
-              <FormField label='InteractionDate'>
+              <FormField label='Interaction Date'>
                 <DatePicker
                   dateFormat='yyyy-MM-dd hh:mm'
                   showTimeSelect

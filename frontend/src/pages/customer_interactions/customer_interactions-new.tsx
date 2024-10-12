@@ -72,11 +72,11 @@ const Customer_interactionsNew = () => {
             onSubmit={(values) => handleSubmit(values)}
           >
             <Form>
-              <FormField label='InteractionDate'>
+              <FormField label='Interaction Date'>
                 <Field
                   type='datetime-local'
                   name='interaction_date'
-                  placeholder='InteractionDate'
+                  placeholder='Interaction Date'
                 />
               </FormField>
 
